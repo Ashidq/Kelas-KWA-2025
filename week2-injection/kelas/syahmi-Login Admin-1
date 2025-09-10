@@ -1,0 +1,11 @@
+Nama: Login Admin
+Type: Injection
+
+- Masuk ke dalam page login
+
+- Intercept Login Request menggunakan burp suite
+
+- Ubah SQL Query
+Ubah kolom email di payload JSON menggunakan ' OR true-- yang akan mengubah perintah SQL menjadi pernyataan yang selalu mengembalikan nilai true, sehingga tidak perlu kata sandi.
+
+- Selanjutnya send to repeater diburp suite lalu liat responnya
